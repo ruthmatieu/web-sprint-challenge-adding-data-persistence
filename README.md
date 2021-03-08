@@ -43,13 +43,13 @@ Build the migration(s) in Knex inside the `data/migrations` folder using appropr
   - [x] `resource_name` - required and unique
   - [x] `resource_description` - optional
 
-- [ ] A **task** is one of the steps needed to complete a project and is stored in a `tasks` table with the following columns:
+- [x] A **task** is one of the steps needed to complete a project and is stored in a `tasks` table with the following columns:
 
   - [x] `task_id` - primary key
   - [x] `task_description` - required
   - [x] `task_notes` - optional
   - [x] `task_completed` - the database defaults it to `false` (integer 0) if not provided
-  - [ ] `project_id` - required and points to an actual `project_id` in the `projects` table
+  - [x] `project_id` - required and points to an actual `project_id` in the `projects` table
 
 - [x] A **resource assignment** connects a resource and a project, and is stored in a `project_resources` table. You decide what columns to use.
 
