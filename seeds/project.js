@@ -1,13 +1,9 @@
 
 exports.seed = function(knex) {
-  // Deletes ALL existing entries
-  return knex('table_name').del()
-    .then(function () {
-      // Inserts seed entries
-      return knex('table_name').insert([
-        {id: 1, colName: 'rowValue1'},
-        {id: 2, colName: 'rowValue2'},
-        {id: 3, colName: 'rowValue3'}
+
+  return knex('project').insert([
+        {project_id: 1, project_name: 'BugTester', project_description: 'Tests for bugs', project_completed: true},
+        {project_id: 2, project_name: 'UI/UX', project_description: '', project_completed: false},
+        {project_id: 3, project_name: 'Server Builder', project_description: '', project_completed: false}
       ]);
-    });
 };
